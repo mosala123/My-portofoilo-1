@@ -1,0 +1,152 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+color: white;
+}
+
+/* header */
+.navbar-nav  {
+margin-left: auto;
+padding:  0 5px ;
+}
+.navbar-brand {
+margin-right: auto;
+padding:  0 5px ;
+}
+.nav-item{
+padding:  0 5px  ;  
+color: #452a77;
+}
+ 
+/*---------------------------------------  */
+.custom-bg {
+  width: 200px;
+  height: 200px;
+  background-image: url('path/to/border-radius-bg.svg');
+  background-size: cover;
+cursor: pointer;
+background-color: orange;
+border-radius: 30% 70% 70% 30% / 30% 30% 60% 70% ;
+position: absolute;
+right: 60px ;
+top: 50px;
+animation-name: uptodown;
+animation-duration: 2s;
+animation-direction: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+margin-top: 20px ;
+z-index: 1;
+}
+
+ 
+.jumbotron img{
+  position: relative; z-index: 2;
+}
+@keyframes uptodown{
+  0%{
+   transform: translateY(-3%);
+  }
+  100%{
+
+  }
+}
+
+/* ---------------------------------------- */
+#Services{
+margin-top: -36px;
+}
+#rowServices{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+}
+#Services .card
+,#rowSkills .card
+,#rowProject .card{
+  box-shadow:  2px  2px   2px 2px    rgba(255, 166, 0, 0.791);
+  transition: 0.3s ease;
+}
+#Services .card:hover
+,#rowSkills .card:hover
+,#rowProject .card:hover{
+  box-shadow: none;
+}
+/* containerServices */
+
+
+
+
+
+
+
+
+
+/* ====================== */
+/* about me */
+.aboutme{
+  font-size: 25px ;
+}
+#about{
+display: flex;
+align-items: center;
+padding: 30px 0 ;
+}
+/* --------------------------------- */
+/* my skills  */
+ 
+#rowProject .col-md-4 .card{
+  margin: 7px 2px ;
+}
+
+ #rowSkills{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 96%;
+
+ }
+/* projects  */
+#rowProject{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  margin: 0 auto;
+}
+.carousel{
+border: 1px solid transparent ;  
+}
+#headpoject{
+margin: 40px 0 20px  ;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.card {
+  background-color: #452a77; /* خلفية بطاقة اللون الرمادي */
+  animation: slideIn 1s forwards; /* تأثير حركي بتأخير 1 ثانية */
+}
+/* -------- */
+/* contect me  */
+#ContactMe{
+  padding: 40px 0 20px 0  ;
+}
+#ContactMe #row{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
